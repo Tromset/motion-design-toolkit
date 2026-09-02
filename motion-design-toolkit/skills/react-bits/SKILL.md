@@ -3,6 +3,8 @@ name: react-bits
 description: Animated React components library with 165+ text animations, UI elements, and backgrounds. Use when the user wants copy-paste React animation components, BlurText, SplitText, animated backgrounds, shadcn-compatible animated UI, reactbits.dev components, text reveal effects, or mentions react-bits, DavidHDev, or reactbits.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [gsap](../gsap/SKILL.md), [liquid-logo](../liquid-logo/SKILL.md)
+
 # React Bits
 
 [React Bits](https://github.com/DavidHDev/react-bits) is the largest open-source library of animated React components — 165+ free, customizable animations for text, backgrounds, and UI. Copy-paste into any modern React project or install via shadcn/jsrepo CLI.

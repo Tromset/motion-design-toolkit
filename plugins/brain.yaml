@@ -1,0 +1,13 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: plugins
+purpose: "Locally installable Cursor plugins packaged in this repo."
+parent: ../brain.yaml
+children:
+  - ponytail-review
+files:
+  README.md: "Plugins hub — what is packaged and how to symlink it."
+when_to_read:
+  "Which Cursor plugins ship in this repo?": README.md
+  "Where is ponytail-review?": ponytail-review/README.md
+  "How do I install a plugin locally?": README.md
+links: {}

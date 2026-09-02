@@ -1,0 +1,13 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: lenis
+purpose: "Lenis smooth scroll, ReactLenis, GSAP ScrollTrigger sync."
+parent: ../brain.yaml
+children: []
+files:
+  README.md: "Skill hub."
+  SKILL.md: "Lenis smooth-scroll skill."
+when_to_read:
+  "When should this skill trigger?": SKILL.md
+  "How do I install / call the library?": SKILL.md
+  "What are the skip conditions?": SKILL.md
+links: {}

@@ -1,0 +1,18 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: motion-design-toolkit
+purpose: "Pro Design Cursor plugin: eight motion/UI skills plus local install script."
+parent: ../brain.yaml
+children:
+  - scripts
+  - skills
+files:
+  README.md: "Plugin hub — install, skill table, usage examples."
+when_to_read:
+  "How do I install the Pro Design plugin?": README.md
+  "Which skill should I open for a user request?": README.md
+  "Where is the plugin manifest?": README.md
+  "Where is the local install script?": scripts/install-local.sh
+  "Where are the skill files?": skills/README.md
+links:
+  github: https://github.com/Tromset/motion-design-toolkit
+  origin: https://cursor.com/codebase/tromset/pro-design-toolkit

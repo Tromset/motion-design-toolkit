@@ -3,6 +3,8 @@ name: gsap
 description: GreenSock Animation Platform — high-performance JavaScript animations. Use when the user wants GSAP tweens, timelines, ScrollTrigger scroll animations, SplitText, Flip layouts, Draggable, motion paths, staggered animations, useGSAP React hook, scroll-driven reveals, or mentions gsap, greensock, GreenSock, ScrollTrigger, or ScrollSmoother.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [lenis](../lenis/SKILL.md), [vanta](../vanta/SKILL.md)
+
 # GSAP (GreenSock Animation Platform)
 
 [GSAP](https://github.com/greensock/GSAP) is a framework-agnostic JavaScript animation library. Animate CSS transforms, SVG, canvas, generic objects, colors, and strings with precise timing, sequencing, and browser compatibility. The entire toolset — including ScrollTrigger, SplitText, Flip, MorphSVG — is **free for commercial use** (as of 2024, sponsored by Webflow).

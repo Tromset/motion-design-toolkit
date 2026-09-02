@@ -1,0 +1,13 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: liquid-logo
+purpose: "WebGL liquid metal logo effects (paper-design)."
+parent: ../brain.yaml
+children: []
+files:
+  README.md: "Skill hub."
+  SKILL.md: "liquid-logo / Paper Shaders skill."
+when_to_read:
+  "When should this skill trigger?": SKILL.md
+  "How do I install / call the library?": SKILL.md
+  "What are the skip conditions?": SKILL.md
+links: {}

@@ -3,6 +3,8 @@ name: ui-ux-pro-max
 description: UI/UX design intelligence for web, mobile, and desktop. Use when designing, building, reviewing, or fixing interfaces — pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Includes 79 styles, 192 palettes, 74 font pairings, 119 UX guidelines, and 22 tech stacks. Triggers on keywords like design, build, create, implement, review, landing page, dashboard, accessibility, or color palette.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [gsap](../gsap/SKILL.md), [react-bits](../react-bits/SKILL.md)
+
 # UI/UX Pro Max — Design Intelligence
 
 Adapted from [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill). Searchable design guidance for AI coding assistants: styles, palettes, typography, UX rules, icons, GSAP presets, charts, and stack-specific implementation patterns.

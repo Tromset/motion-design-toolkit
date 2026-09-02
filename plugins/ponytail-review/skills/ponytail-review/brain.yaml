@@ -1,0 +1,17 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: ponytail-review
+purpose: "Cursor skill: two-pass review (ponytail complexity + senior-engineer lens)."
+parent: ../brain.yaml
+children:
+  - references
+files:
+  README.md: "Skill hub."
+  SKILL.md: "Procedure, severity, tags, and when to trigger."
+when_to_read:
+  "How do I run a ponytail senior review?": SKILL.md
+  "What is the output format?": SKILL.md
+  "Where is the markdown template?": references/review-template.md
+  "What is the ponytail ladder?": references/ladder.md
+links:
+  upstream_ponytail: https://github.com/DietrichGebert/ponytail
+  upstream_review_skill: https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail-review

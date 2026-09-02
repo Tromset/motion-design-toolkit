@@ -3,6 +3,8 @@ name: react-three-fiber
 description: Build declarative 3D scenes in React with @react-three/fiber (React Three Fiber / R3F). Use when the user wants Three.js in React, 3D components, Canvas scenes, WebGL meshes, useFrame animations, interactive 3D UI, @react-three/drei helpers, GLTF models, post-processing, XR, or mentions react-three-fiber, R3F, pmndrs, or three.js with React.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [vanta](../vanta/SKILL.md), [lenis](../lenis/SKILL.md)
+
 # React Three Fiber
 
 [React Three Fiber](https://github.com/pmndrs/react-three-fiber) is a React renderer for [Three.js](https://threejs.org). Build scenes declaratively with reusable components that react to state, handle pointer events, and participate in React's ecosystem.

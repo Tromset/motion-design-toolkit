@@ -1,0 +1,23 @@
+---
+description: Ponytail + senior-engineer review. Use on review, audit, over-engineering, or ship-readiness questions.
+globs:
+alwaysApply: false
+---
+
+# Ponytail review rule
+
+Lazy means efficient, not careless. Read the flow, then climb:
+
+1. Does this need to exist? (YAGNI)
+2. Already in this codebase? Reuse it.
+3. Stdlib / native platform / already-installed dependency?
+4. One line?
+5. Only then: the minimum that works.
+
+Deletion over addition. Boring over clever. Fewest files possible.
+
+Never simplify away: trust-boundary validation, data-loss handling, security, accessibility, or understanding the problem.
+
+After the complexity pass, do a senior pass: architecture, correctness, maintainability, security, tests, DX, risks. Cite files. Severity P0–P3. Do not apply fixes unless asked.
+
+Full procedure: `skills/ponytail-review/SKILL.md`.

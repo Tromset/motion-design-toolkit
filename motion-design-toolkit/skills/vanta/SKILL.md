@@ -3,6 +3,8 @@ name: vanta
 description: Animated 3D WebGL backgrounds with Vanta.js. Use when the user wants animated hero backgrounds, three.js shader backgrounds, waves/birds/fog/net effects, interactive WebGL page backgrounds, VANTA.WAVES, vantajs.com effects, or mentions vanta, vanta.js, tengbao vanta, or WebGL background animations.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [r3f](../react-three-fiber/SKILL.md), [gsap](../gsap/SKILL.md)
+
 # Vanta.js
 
 [Vanta.js](https://github.com/tengbao/vanta) adds 3D animated digital art as webpage backgrounds with a few lines of code. Effects render via [three.js](https://threejs.org) (WebGL) or [p5.js](https://p5js.org), respond to mouse/touch, and weigh ~120kb minified+gzipped (mostly three.js).

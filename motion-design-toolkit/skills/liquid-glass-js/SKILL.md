@@ -3,6 +3,8 @@ name: liquid-glass-js
 description: Apple Liquid Glass-inspired WebGL glass effects with real-time refraction, blur, and masking. Use when the user wants liquid glass UI, glassmorphism buttons, frosted glass containers, WebGL glass shaders, Apple-style glass panels, nested glass components, or mentions liquid-glass-js, dashersw glass, or html2canvas page sampling for glass effects.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [liquid-logo](../liquid-logo/SKILL.md), [ui-ux](../ui-ux-pro-max/SKILL.md)
+
 # Liquid Glass JS
 
 [Liquid Glass JS](https://github.com/dashersw/liquid-glass-js) brings Apple Liquid Glass-style effects to the web using WebGL 2.0 shaders. It provides `Container` and `Button` classes with real-time refraction, multi-layer edge/rim/base distortion, background blur, and nested glass (child elements sample parent output).
