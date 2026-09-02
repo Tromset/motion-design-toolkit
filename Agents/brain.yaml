@@ -1,0 +1,16 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: Agents
+purpose: "Human/agent context: objectives, constraints, and written reviews."
+parent: ../brain.yaml
+children:
+  - reviews
+files:
+  README.md: "Agents hub — context index."
+  objectives.md: "What this repo is for and what success looks like."
+  constraints.md: "Hard limits: do not destroy the plugin, keep source as source."
+when_to_read:
+  "What are we trying to achieve with this repo?": objectives.md
+  "What must an agent never do here?": constraints.md
+  "Where is the senior / ponytail review of the toolkit?": reviews/senior-review.md
+  "What context files exist?": README.md
+links: {}

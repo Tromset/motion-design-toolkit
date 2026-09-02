@@ -1,0 +1,16 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: ui-ux-pro-max
+purpose: "UI/UX intelligence: accessibility, palettes, pre-delivery checklist."
+parent: ../brain.yaml
+children:
+  - references
+files:
+  README.md: "Skill hub."
+  SKILL.md: "UI/UX Pro Max adapted skill (references in-tree; CLI DB optional)."
+when_to_read:
+  "When should this skill trigger?": SKILL.md
+  "How do I install / call the library?": SKILL.md
+  "What are the skip conditions?": SKILL.md
+  "Full UX guideline index?": references/quick-reference.md
+  "Native/mobile polish checklist?": references/pro-rules.md
+links: {}

@@ -1,0 +1,14 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: references
+purpose: "Static UX guideline index and native/mobile polish checklist."
+parent: ../brain.yaml
+children: []
+files:
+  README.md: "References hub."
+  quick-reference.md: "Full 10-category UX guideline index."
+  pro-rules.md: "Native/mobile polish + pre-delivery checklist."
+when_to_read:
+  "Need the full web UX checklist?": quick-reference.md
+  "Need native/mobile polish rules?": pro-rules.md
+  "Which file is web vs native?": README.md
+links: {}

@@ -1,0 +1,26 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: skills
+purpose: "Eight Pro Design Cursor skills — open only the one that matches the request."
+parent: ../brain.yaml
+children:
+  - gsap
+  - lenis
+  - liquid-glass-js
+  - liquid-logo
+  - react-bits
+  - react-three-fiber
+  - ui-ux-pro-max
+  - vanta
+files:
+  README.md: "Skill index — trigger table."
+when_to_read:
+  "Which skill matches the user request?": README.md
+  "3D / Three.js / Canvas / useFrame?": react-three-fiber/SKILL.md
+  "Apple glass / WebGL refraction UI?": liquid-glass-js/SKILL.md
+  "Liquid metal logo / paper shaders?": liquid-logo/SKILL.md
+  "Accessibility, palette, typography, UX review?": ui-ux-pro-max/SKILL.md
+  "Smooth scroll / ReactLenis / ScrollTrigger sync?": lenis/SKILL.md
+  "Tweens, timelines, SplitText, Flip?": gsap/SKILL.md
+  "WebGL page background / VANTA.WAVES?": vanta/SKILL.md
+  "Animated React text/UI/background components?": react-bits/SKILL.md
+links: {}

@@ -5,6 +5,24 @@ A Cursor agent plugin bundling eight design-focused skills for building premium 
 **GitHub:** https://github.com/Tromset/motion-design-toolkit  
 **Origin:** https://cursor.com/codebase/tromset/pro-design-toolkit
 
+> Hub · [brain.yaml](./brain.yaml) · Parent: [../README.md](../README.md)
+
+## Contents
+
+| File | Purpose |
+|------|---------|
+| [README.md](./README.md) | This hub — install, skill index, plugin layout. |
+| [brain.yaml](./brain.yaml) | Routing table for the Pro Design plugin. |
+
+Machine config (brAIn rule 5): [.cursor-plugin/plugin.json](./.cursor-plugin/plugin.json).
+
+## Subfolders
+
+- [scripts/](./scripts/README.md) — local symlink installer (`install-local.sh`).
+- [skills/](./skills/README.md) — eight design skills (R3F, glass, logo, UI/UX, Lenis, GSAP, Vanta, React Bits).
+
+Senior review of this pack: [../Agents/reviews/senior-review.md](../Agents/reviews/senior-review.md). Review plugin: [../plugins/ponytail-review/README.md](../plugins/ponytail-review/README.md).
+
 ## Install on your computer
 
 Paste this in your terminal:

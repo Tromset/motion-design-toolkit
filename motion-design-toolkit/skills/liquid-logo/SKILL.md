@@ -3,6 +3,8 @@ name: liquid-logo
 description: Turn logos into animated liquid metal effects using WebGL shaders and Paper Shaders. Use when the user wants liquid metal logos, animated logo shaders, logo upload with refraction/dispersion effects, liquid.paper.design style effects, @paper-design/shaders-react, or mentions paper-design/liquid-logo.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [glass](../liquid-glass-js/SKILL.md), [react-bits](../react-bits/SKILL.md)
+
 # Liquid Logo
 
 [Liquid Logo](https://github.com/paper-design/liquid-logo) turns uploaded logos into animated liquid metal effects using custom WebGL 2.0 fragment shaders. Live tool: https://liquid.paper.design

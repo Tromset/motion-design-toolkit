@@ -1,0 +1,12 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: rules
+purpose: "Cursor rules shipped with the ponytail-review plugin."
+parent: ../brain.yaml
+children: []
+files:
+  README.md: "Rules hub."
+  ponytail-review.mdc: "Always-available review rule: ladder + non-negotiables."
+when_to_read:
+  "What rule should Cursor apply on review tasks?": ponytail-review.mdc
+  "What must never be simplified away?": ponytail-review.mdc
+links: {}

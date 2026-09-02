@@ -1,0 +1,12 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: skills
+purpose: "Skills shipped by the ponytail-review plugin."
+parent: ../brain.yaml
+children:
+  - ponytail-review
+files:
+  README.md: "Skills hub for this plugin."
+when_to_read:
+  "Which skills does this plugin ship?": README.md
+  "Open the review skill": ponytail-review/SKILL.md
+links: {}

@@ -1,0 +1,14 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: references
+purpose: "Templates and cheat-sheets for the ponytail-review skill."
+parent: ../brain.yaml
+children: []
+files:
+  README.md: "References hub."
+  review-template.md: "Markdown skeleton for a two-pass review."
+  ladder.md: "The 7-rung ponytail ladder and non-negotiables."
+when_to_read:
+  "What Markdown structure should the review use?": review-template.md
+  "What is the ponytail ladder?": ladder.md
+  "What must never be deleted in a review?": ladder.md
+links: {}

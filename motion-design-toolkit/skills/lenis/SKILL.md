@@ -3,6 +3,8 @@ name: lenis
 description: Smooth scroll with Lenis by darkroom.engineering. Use when the user wants smooth scrolling, scroll-synced WebGL/Three.js scenes, parallax, anchor link scrolling, GSAP ScrollTrigger integration, horizontal scroll, nested scroll containers, ReactLenis, useLenis, or mentions lenis, darkroomengineering, or scroll smoothing.
 ---
 
+> [Hub](./README.md) · [brain.yaml](./brain.yaml) · Related: [gsap](../gsap/SKILL.md), [r3f](../react-three-fiber/SKILL.md)
+
 # Lenis
 
 [Lenis](https://github.com/darkroomengineering/lenis) ("smooth" in Latin) is a lightweight, dependency-free smooth scroll library. It wraps native browser scroll so `position: sticky`, anchor links, and accessibility keep working — while giving you a single scroll loop to sync WebGL scenes, GSAP ScrollTrigger, and parallax.

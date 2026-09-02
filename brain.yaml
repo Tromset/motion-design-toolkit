@@ -1,0 +1,23 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: motion-design-toolkit
+purpose: "Cursor plugin repo: eight motion-design skills plus ponytail-review and brAIn navigation."
+parent: null
+children:
+  - Agents
+  - motion-design-toolkit
+  - plugins
+  - scripts
+files:
+  README.md: "Root hub — start here to route into the plugin, reviews, or auditor."
+  AGENTS.md: "Always-on ponytail + brAIn routing for agents working in this repo."
+when_to_read:
+  "Where do I start in this repo?": README.md
+  "What is the overall purpose and folder map?": brain.yaml
+  "How should an agent behave while coding here?": AGENTS.md
+  "Where is the senior-engineer / ponytail review?": Agents/reviews/senior-review.md
+  "Where is the installable Cursor plugin for reviews?": plugins/README.md
+  "How do I audit this brAIn?": scripts/README.md
+  "Where are the eight design skills?": motion-design-toolkit/README.md
+links:
+  github: https://github.com/Tromset/motion-design-toolkit
+  ponytail: https://github.com/DietrichGebert/ponytail

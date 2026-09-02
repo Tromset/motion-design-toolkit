@@ -1,0 +1,14 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: reviews
+purpose: "Written senior-engineer reviews of this repository."
+parent: ../brain.yaml
+children: []
+files:
+  README.md: "Reviews hub."
+  senior-review.md: "Ponytail + senior-engineer review of motion-design-toolkit."
+when_to_read:
+  "What did the senior review find?": senior-review.md
+  "Which findings are P0 vs later?": senior-review.md
+  "Which files are cited in the review?": senior-review.md
+links:
+  ponytail: https://github.com/DietrichGebert/ponytail

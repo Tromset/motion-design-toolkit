@@ -1,0 +1,28 @@
+{
+  "name": "pro-design",
+  "displayName": "Pro Design",
+  "version": "1.0.0",
+  "description": "Eight design-focused Cursor skills: React Three Fiber, liquid glass, liquid logos, UI/UX Pro Max, Lenis, GSAP, Vanta, and React Bits.",
+  "author": {
+    "name": "Tromset"
+  },
+  "homepage": "https://github.com/Tromset/motion-design-toolkit",
+  "repository": "https://github.com/Tromset/motion-design-toolkit",
+  "license": "MIT",
+  "keywords": [
+    "motion",
+    "design",
+    "gsap",
+    "three",
+    "lenis",
+    "ui",
+    "animation"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "design",
+    "animation",
+    "ui"
+  ],
+  "skills": "./skills/"
+}

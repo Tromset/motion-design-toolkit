@@ -1,0 +1,27 @@
+{
+  "name": "ponytail-review",
+  "displayName": "Ponytail Review",
+  "version": "1.0.0",
+  "description": "Senior-engineer code review through the ponytail lens: YAGNI ladder first, then architecture, correctness, security, tests, and DX. Ships a Cursor skill, a review template, and an always-on rule.",
+  "author": {
+    "name": "Tromset",
+    "email": "delairvictor9@gmail.com"
+  },
+  "homepage": "https://github.com/Tromset/motion-design-toolkit",
+  "repository": "https://github.com/Tromset/motion-design-toolkit",
+  "license": "MIT",
+  "keywords": [
+    "ponytail",
+    "code-review",
+    "yagni",
+    "senior-engineer",
+    "over-engineering"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "review",
+    "yagni",
+    "quality"
+  ],
+  "skills": "./skills/"
+}

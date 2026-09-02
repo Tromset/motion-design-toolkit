@@ -1,0 +1,13 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: scripts
+purpose: "Installer that symlinks this plugin into ~/.cursor/plugins/local."
+parent: ../brain.yaml
+children: []
+files:
+  README.md: "Install-script hub."
+  install-local.sh: "Clone/update + symlink helper (prefers Origin CLI)."
+when_to_read:
+  "How do I install Pro Design on a machine?": install-local.sh
+  "What does the installer assume (Origin, branch)?": install-local.sh
+  "Why might install fail on this Cloud Agent?": README.md
+links: {}

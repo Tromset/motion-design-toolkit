@@ -1,0 +1,17 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: ponytail-review
+purpose: "Cursor plugin: ponytail + senior-engineer review skill, rules, and template."
+parent: ../brain.yaml
+children:
+  - skills
+  - rules
+files:
+  README.md: "Plugin hub — install, contents, when to use."
+when_to_read:
+  "How do I install this plugin locally?": README.md
+  "What is in the plugin manifest?": README.md
+  "Where is the review skill?": skills/ponytail-review/SKILL.md
+  "Where is the always-on review rule?": rules/ponytail-review.mdc
+links:
+  ponytail: https://github.com/DietrichGebert/ponytail
+  cursor_plugin_example: https://github.com/cursor/plugins
