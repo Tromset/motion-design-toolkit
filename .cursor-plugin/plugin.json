@@ -1,0 +1,28 @@
+{
+  "name": "motion-design-toolkit",
+  "version": "1.0.0",
+  "description": "Cursor plugin for this repo: eight motion/UI skills (React Three Fiber, liquid glass, liquid logos, UI/UX Pro Max, Lenis, GSAP, Vanta, React Bits) plus ponytail senior review.",
+  "author": {
+    "name": "Tromset",
+    "email": "delairvictor9@gmail.com"
+  },
+  "homepage": "https://github.com/Tromset/motion-design-toolkit",
+  "repository": "https://github.com/Tromset/motion-design-toolkit",
+  "license": "MIT",
+  "keywords": [
+    "motion",
+    "design",
+    "gsap",
+    "three",
+    "lenis",
+    "ui",
+    "animation",
+    "review",
+    "ponytail"
+  ],
+  "skills": [
+    "./motion-design-toolkit/skills/",
+    "./plugins/ponytail-review/skills/"
+  ],
+  "rules": "./plugins/ponytail-review/rules/"
+}

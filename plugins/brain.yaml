@@ -10,4 +10,5 @@ when_to_read:
   "Which Cursor plugins ship in this repo?": README.md
   "Where is ponytail-review?": ponytail-review/README.md
   "How do I install a plugin locally?": README.md
+  "How do I install the whole repo as one plugin?": ../scripts/install-local.sh
 links: {}

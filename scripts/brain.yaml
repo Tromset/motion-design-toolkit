@@ -1,13 +1,15 @@
 # brain.yaml — folder variables (brAIn rule 6)
 name: scripts
-purpose: "Repo-level tooling: brAIn auditor (stdlib Python)."
+purpose: "Repo-level tooling: brAIn auditor and local Cursor plugin installer."
 parent: ../brain.yaml
 children: []
 files:
   README.md: "Scripts hub."
   brain_audit.py: "Dependency-free auditor: tokens, savings, broken links, orphans."
+  install-local.sh: "Symlink this checkout as ~/.cursor/plugins/local/motion-design-toolkit."
 when_to_read:
   "How do I verify the brAIn (links/orphans/savings)?": brain_audit.py
   "What does the auditor print?": README.md
   "How do I run the audit?": README.md
+  "How do I install this repo as a Cursor plugin?": install-local.sh
 links: {}

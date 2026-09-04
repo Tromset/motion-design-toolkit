@@ -27,12 +27,14 @@ Open [brain.yaml](./brain.yaml) and pick the one file that answers the question.
 python3 scripts/brain_audit.py .
 ```
 
-## Install the review plugin locally
+## Install this repo as a Cursor plugin
+
+The git root is the plugin (`.cursor-plugin/plugin.json`). It loads the eight design skills plus ponytail-review.
 
 ```bash
-mkdir -p ~/.cursor/plugins/local ~/.cursor/skills
-ln -sfn "$PWD/plugins/ponytail-review" ~/.cursor/plugins/local/ponytail-review
-ln -sfn "$PWD/plugins/ponytail-review/skills/ponytail-review" ~/.cursor/skills/ponytail-review
+bash scripts/install-local.sh
 ```
 
-Reload Cursor (`Developer: Reload Window`). Design skills install separately from [motion-design-toolkit/](./motion-design-toolkit/README.md).
+That is `mkdir -p ~/.cursor/plugins/local` plus `ln -sfn "$PWD" ~/.cursor/plugins/local/motion-design-toolkit`. Reload Cursor (`Developer: Reload Window`).
+
+Optional: symlink only [motion-design-toolkit/](./motion-design-toolkit/README.md) or [plugins/ponytail-review/](./plugins/README.md) if you want one pack.

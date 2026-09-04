@@ -20,15 +20,18 @@ Machine config (not converted — brAIn rule 5): [.cursor-plugin/plugin.json](./
 
 ## Install (this VM / any machine)
 
-No marketplace publish. Symlink the plugin root:
+No marketplace publish. Prefer the git-root plugin (this pack + the eight design skills):
 
 ```bash
-mkdir -p ~/.cursor/plugins/local ~/.cursor/skills
-ln -sfn /workspace/plugins/ponytail-review ~/.cursor/plugins/local/ponytail-review
-ln -sfn /workspace/plugins/ponytail-review/skills/ponytail-review ~/.cursor/skills/ponytail-review
+bash scripts/install-local.sh
 ```
 
-From a clone of this repo, replace `/workspace` with `$PWD` if the plugin lives at `plugins/ponytail-review`.
+This plugin only:
+
+```bash
+mkdir -p ~/.cursor/plugins/local
+ln -sfn "$PWD/plugins/ponytail-review" ~/.cursor/plugins/local/ponytail-review
+```
 
 Reload Cursor (`Developer: Reload Window`).
 
