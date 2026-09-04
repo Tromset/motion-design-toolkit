@@ -1,59 +1,50 @@
 #!/usr/bin/env bash
-# Install this git checkout as a Cursor plugin (local symlink).
+# Install this git checkout as one Cursor skill (~/.cursor/skills/...).
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-MANIFEST="$ROOT/.cursor-plugin/plugin.json"
-LINK="${CURSOR_PLUGIN_LINK:-$HOME/.cursor/plugins/local/motion-design-toolkit}"
+SKILL="$ROOT/SKILL.md"
+SKILL_LINK="${CURSOR_SKILL_LINK:-$HOME/.cursor/skills/motion-design-toolkit}"
+PLUGIN_LINK="${CURSOR_PLUGIN_LINK:-$HOME/.cursor/plugins/local/motion-design-toolkit}"
 
-if [[ ! -f "$MANIFEST" ]]; then
-  echo "Missing plugin manifest: $MANIFEST" >&2
+if [[ ! -f "$SKILL" ]]; then
+  echo "Missing unique skill: $SKILL" >&2
   exit 1
 fi
 
-python3 - "$ROOT" "$MANIFEST" <<'PY'
-import json
+python3 - "$ROOT" "$SKILL" <<'PY'
 import sys
 from pathlib import Path
 
 root = Path(sys.argv[1])
-manifest_path = Path(sys.argv[2])
-manifest = json.loads(manifest_path.read_text())
-name = manifest.get("name")
-if not name:
-    raise SystemExit("plugin.json is missing name")
+skill = Path(sys.argv[2])
+text = skill.read_text()
+if "name: motion-design-toolkit" not in text:
+    raise SystemExit("SKILL.md must declare name: motion-design-toolkit")
 
-skill_dirs = manifest.get("skills", [])
-if isinstance(skill_dirs, str):
-    skill_dirs = [skill_dirs]
-if not skill_dirs:
-    raise SystemExit("plugin.json has no skills paths")
-
-found = []
-for rel in skill_dirs:
-    folder = (root / rel).resolve()
-    if not folder.is_dir():
-        raise SystemExit(f"skills path is not a directory: {rel}")
-    skills = sorted(p.parent.name for p in folder.glob("*/SKILL.md"))
-    if not skills:
-        raise SystemExit(f"no SKILL.md under {rel}")
-    found.extend(skills)
-
-rules = manifest.get("rules")
-if rules:
-    rule_paths = [rules] if isinstance(rules, str) else list(rules)
-    for rel in rule_paths:
-        folder = (root / rel).resolve()
-        if not folder.is_dir():
-            raise SystemExit(f"rules path is not a directory: {rel}")
-        if not any(folder.glob("*.mdc")):
-            raise SystemExit(f"no .mdc rules under {rel}")
-
-print(f"ok: {name} ({len(found)} skills: {', '.join(found)})")
+needed = [
+    root / "motion-design-toolkit/skills/react-three-fiber/SKILL.md",
+    root / "motion-design-toolkit/skills/liquid-glass-js/SKILL.md",
+    root / "motion-design-toolkit/skills/liquid-logo/SKILL.md",
+    root / "motion-design-toolkit/skills/ui-ux-pro-max/SKILL.md",
+    root / "motion-design-toolkit/skills/lenis/SKILL.md",
+    root / "motion-design-toolkit/skills/gsap/SKILL.md",
+    root / "motion-design-toolkit/skills/vanta/SKILL.md",
+    root / "motion-design-toolkit/skills/react-bits/SKILL.md",
+    root / "plugins/ponytail-review/skills/ponytail-review/SKILL.md",
+]
+missing = [str(p.relative_to(root)) for p in needed if not p.is_file()]
+if missing:
+    raise SystemExit("specialist SKILL.md missing: " + ", ".join(missing))
+print("ok: unique skill motion-design-toolkit (9 specialist files)")
 PY
 
-mkdir -p "$(dirname "$LINK")"
-ln -sfn "$ROOT" "$LINK"
+mkdir -p "$(dirname "$SKILL_LINK")"
+ln -sfn "$ROOT" "$SKILL_LINK"
+echo "✓ Skill linked:  $SKILL_LINK -> $ROOT"
 
-echo "✓ Plugin linked: $LINK -> $ROOT"
+# Same checkout, now a single-skill plugin (root SKILL.md, no skills/ scan).
+mkdir -p "$(dirname "$PLUGIN_LINK")"
+ln -sfn "$ROOT" "$PLUGIN_LINK"
+echo "✓ Plugin linked: $PLUGIN_LINK -> $ROOT (one skill)"
 echo "Reload Cursor: Developer → Reload Window"

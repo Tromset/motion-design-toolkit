@@ -20,7 +20,7 @@ Machine config (not converted — brAIn rule 5): [.cursor-plugin/plugin.json](./
 
 ## Install (this VM / any machine)
 
-No marketplace publish. Prefer the git-root plugin (this pack + the eight design skills):
+No marketplace publish. Prefer the git-root skill ([../../SKILL.md](../../SKILL.md) — this pack + the eight design specialists):
 
 ```bash
 bash scripts/install-local.sh

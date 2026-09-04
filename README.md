@@ -11,6 +11,7 @@ Combination of motion design tools in a skill for AI agents — plus a brAIn nav
 | [README.md](./README.md) | This hub — folder map and routing. |
 | [AGENTS.md](./AGENTS.md) | Always-on agent rules: ponytail ladder + brAIn routing. |
 | [brain.yaml](./brain.yaml) | Root variables card and `when_to_read` table. |
+| [SKILL.md](./SKILL.md) | Unique Cursor skill — pick one specialist, do not load all eight. |
 
 ## Subfolders
 
@@ -27,14 +28,14 @@ Open [brain.yaml](./brain.yaml) and pick the one file that answers the question.
 python3 scripts/brain_audit.py .
 ```
 
-## Install this repo as a Cursor plugin
+## Install as one skill
 
-The git root is the plugin (`.cursor-plugin/plugin.json`). It loads the eight design skills plus ponytail-review.
+The git root is a **single** Cursor skill ([SKILL.md](./SKILL.md)). It routes to one specialist file; it does not load the eight design skills as separate plugins.
 
 ```bash
 bash scripts/install-local.sh
 ```
 
-That is `mkdir -p ~/.cursor/plugins/local` plus `ln -sfn "$PWD" ~/.cursor/plugins/local/motion-design-toolkit`. Reload Cursor (`Developer: Reload Window`).
+That is `ln -sfn "$PWD" ~/.cursor/skills/motion-design-toolkit` (and the same path under `~/.cursor/plugins/local` so Cursor still sees a plugin with one skill). Reload Cursor (`Developer: Reload Window`).
 
-Optional: symlink only [motion-design-toolkit/](./motion-design-toolkit/README.md) or [plugins/ponytail-review/](./plugins/README.md) if you want one pack.
+To load a specialist pack by itself, symlink [motion-design-toolkit/](./motion-design-toolkit/README.md) or [plugins/ponytail-review/](./plugins/README.md).

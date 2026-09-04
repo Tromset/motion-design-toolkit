@@ -1,7 +1,7 @@
 {
   "name": "motion-design-toolkit",
   "version": "1.0.0",
-  "description": "Cursor plugin for this repo: eight motion/UI skills (React Three Fiber, liquid glass, liquid logos, UI/UX Pro Max, Lenis, GSAP, Vanta, React Bits) plus ponytail senior review.",
+  "description": "This repo as one Cursor skill: a router into eight motion/UI specialists plus ponytail-review. Root SKILL.md is the only skill Cursor loads.",
   "author": {
     "name": "Tromset",
     "email": "delairvictor9@gmail.com"
@@ -19,10 +19,6 @@
     "animation",
     "review",
     "ponytail"
-  ],
-  "skills": [
-    "./motion-design-toolkit/skills/",
-    "./plugins/ponytail-review/skills/"
   ],
   "rules": "./plugins/ponytail-review/rules/"
 }

@@ -25,13 +25,13 @@ Senior review of this pack: [../Agents/reviews/senior-review.md](../Agents/revie
 
 ## Install on your computer
 
-The **git root** is the installable plugin. From a clone of [Tromset/motion-design-toolkit](https://github.com/Tromset/motion-design-toolkit):
+The **git root** is one Cursor skill ([../SKILL.md](../SKILL.md)). From a clone of [Tromset/motion-design-toolkit](https://github.com/Tromset/motion-design-toolkit):
 
 ```bash
 bash scripts/install-local.sh
 ```
 
-That links the checkout to `~/.cursor/plugins/local/motion-design-toolkit` (design skills + ponytail-review). Reload Cursor (`Developer: Reload Window`).
+That links the checkout to `~/.cursor/skills/motion-design-toolkit`. Reload Cursor (`Developer: Reload Window`).
 
 Design skills only (this folder):
 
