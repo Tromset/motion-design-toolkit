@@ -17,7 +17,7 @@ Cursor plugins that live in-repo (not marketplace). Local symlink install only.
 
 ## Local install
 
-The usual path is the **whole repo** as one plugin:
+The usual path is the **whole repo** as one skill ([../SKILL.md](../SKILL.md)):
 
 ```bash
 bash scripts/install-local.sh

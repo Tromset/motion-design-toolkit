@@ -6,10 +6,10 @@ children: []
 files:
   README.md: "Scripts hub."
   brain_audit.py: "Dependency-free auditor: tokens, savings, broken links, orphans."
-  install-local.sh: "Symlink this checkout as ~/.cursor/plugins/local/motion-design-toolkit."
+  install-local.sh: "Symlink this checkout as one skill at ~/.cursor/skills/motion-design-toolkit."
 when_to_read:
   "How do I verify the brAIn (links/orphans/savings)?": brain_audit.py
   "What does the auditor print?": README.md
   "How do I run the audit?": README.md
-  "How do I install this repo as a Cursor plugin?": install-local.sh
+  "How do I install this repo as one Cursor skill?": install-local.sh
 links: {}
