@@ -25,35 +25,20 @@ Senior review of this pack: [../Agents/reviews/senior-review.md](../Agents/revie
 
 ## Install on your computer
 
-Paste this in your terminal:
+The **git root** is the installable plugin. From a clone of [Tromset/motion-design-toolkit](https://github.com/Tromset/motion-design-toolkit):
 
 ```bash
-# Origin CLI (if needed)
-curl -fsSL https://downloads.cursor.com/origin/install.sh | sh
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+bash scripts/install-local.sh
+```
 
-# Sign in + clone
-origin auth login
-origin repo clone tromset/pro-design-toolkit ~/motion-design-toolkit
+That links the checkout to `~/.cursor/plugins/local/motion-design-toolkit` (design skills + ponytail-review). Reload Cursor (`Developer: Reload Window`).
 
-# Link plugin for Cursor
+Design skills only (this folder):
+
+```bash
 mkdir -p ~/.cursor/plugins/local
-ln -sfn ~/motion-design-toolkit ~/.cursor/plugins/local/pro-design
-```
-
-Reload Cursor (`Developer: Reload Window`).
-
-Or run the helper script after cloning:
-
-```bash
-bash ~/motion-design-toolkit/scripts/install-local.sh
-```
-
-```bash
 ln -sfn "$PWD" ~/.cursor/plugins/local/pro-design
 ```
-
-Then reload Cursor (`Developer: Reload Window`).
 
 ## Skills
 

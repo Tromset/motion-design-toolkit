@@ -11,7 +11,7 @@ when_to_read:
   "How do I install the Pro Design plugin?": README.md
   "Which skill should I open for a user request?": README.md
   "Where is the plugin manifest?": README.md
-  "Where is the local install script?": scripts/install-local.sh
+  "Where is the local install script?": ../scripts/install-local.sh
   "Where are the skill files?": skills/README.md
 links:
   github: https://github.com/Tromset/motion-design-toolkit

@@ -1,6 +1,6 @@
 # scripts
 
-Local install helper for the Pro Design plugin.
+Wrapper around the repo-root installer.
 
 > Hub · [brain.yaml](./brain.yaml) · Parent: [../README.md](../README.md)
 
@@ -9,18 +9,22 @@ Local install helper for the Pro Design plugin.
 | File | Purpose |
 |------|---------|
 | [README.md](./README.md) | This hub. |
-| [install-local.sh](./install-local.sh) | Origin clone/update + `~/.cursor/plugins/local/pro-design` symlink. |
+| [install-local.sh](./install-local.sh) | Calls [../../scripts/install-local.sh](../../scripts/install-local.sh). |
 | [brain.yaml](./brain.yaml) | Routing table. |
 
 ## Subfolders
 
 _None._
 
-## Prefer this when you already have the repo
+The git root is the Cursor plugin. Prefer:
+
+```bash
+bash scripts/install-local.sh
+```
+
+from the repository root. To load **this folder only** (eight design skills, no review plugin):
 
 ```bash
 mkdir -p ~/.cursor/plugins/local
-ln -sfn /workspace/motion-design-toolkit ~/.cursor/plugins/local/pro-design
+ln -sfn "$PWD" ~/.cursor/plugins/local/pro-design
 ```
-
-`install-local.sh` still talks to Origin and a historical feature branch — see [../../Agents/reviews/senior-review.md](../../Agents/reviews/senior-review.md).

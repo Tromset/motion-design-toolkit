@@ -15,6 +15,7 @@ when_to_read:
   "What is the overall purpose and folder map?": brain.yaml
   "How should an agent behave while coding here?": AGENTS.md
   "Where is the senior-engineer / ponytail review?": Agents/reviews/senior-review.md
+  "How do I install this repo as a Cursor plugin?": README.md
   "Where is the installable Cursor plugin for reviews?": plugins/README.md
   "How do I audit this brAIn?": scripts/README.md
   "Where are the eight design skills?": motion-design-toolkit/README.md

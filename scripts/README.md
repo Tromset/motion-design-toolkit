@@ -1,6 +1,6 @@
 # scripts
 
-Repo-level tools. The only script here is the brAIn auditor.
+Repo-level tools: the brAIn auditor and the local plugin installer.
 
 > Hub · [brain.yaml](./brain.yaml) · Parent: [../README.md](../README.md)
 
@@ -10,6 +10,7 @@ Repo-level tools. The only script here is the brAIn auditor.
 |------|---------|
 | [README.md](./README.md) | This hub. |
 | [brain_audit.py](./brain_audit.py) | Stdlib auditor — tokens, savings table, broken links, orphans. |
+| [install-local.sh](./install-local.sh) | Symlink this checkout to `~/.cursor/plugins/local/motion-design-toolkit`. |
 | [brain.yaml](./brain.yaml) | Routing table. |
 
 ## Subfolders
@@ -20,6 +21,7 @@ _None._
 
 ```bash
 python3 scripts/brain_audit.py .
+bash scripts/install-local.sh
 ```
 
-Exit 0 requires 0 broken relative links and 0 orphan files. Design-plugin install lives in [../motion-design-toolkit/scripts/](../motion-design-toolkit/scripts/README.md).
+Exit 0 on the auditor requires 0 broken relative links and 0 orphan files. The nested [../motion-design-toolkit/scripts/install-local.sh](../motion-design-toolkit/scripts/install-local.sh) is a wrapper around this installer.
